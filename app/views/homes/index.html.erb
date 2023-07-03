@@ -96,14 +96,14 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="#">
-                        <i class="fa-sharp fa-light fa-user-pen"></i>
-                        新規登録
-                    </a>
-                    <a class="btn btn-xl btn-outline-light" href="#">
-                        <i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i>
-                        ログイン
-                    </a>
+                    <%= link_to new_user_registration_path, class: "btn btn-xl btn-outline-light" do %>
+                      <i class="fa-sharp fa-light fa-user-pen"></i>
+                      新規登録
+                    <% end %>
+                    <%= link_to new_user_session_path, class: "btn btn-xl btn-outline-light" do %>
+                      <i class="fa-sharp fa-light fa-arrow-right-to-bracket"></i>
+                      ログイン
+                    <% end %>
                 </div>
             </div>
         </section>
